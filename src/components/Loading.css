@@ -1,0 +1,79 @@
+/* Loading.css */
+
+.loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(76, 95, 177); /* Fondo blanco */
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .company-logo {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    margin-bottom: 20px; /* Espacio entre el logo y el spinner */
+  }
+  
+  .spinner {
+    color: #343a40; /* Color del spinner (dark) */
+  }
+  
+  @import url('//fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,900&display=swap');
+
+body{
+  font-weight: 700;
+  font-size: 22px;
+}
+#contenedor{ 
+  background-color: #00b8de; 
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  color: #000;
+}
+.cargando{ 
+  position: relative; 
+  color: #FFF;
+  margin-top: 2em;
+  letter-spacing: 0.08em;
+  text-transform: uppercase
+}
+
+.contenedor-loader{  
+     width: 180px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 auto; 
+}
+.contenedor-loader div{ 
+  width: 30px;
+  height: 30px;
+  background-color: #FFF;
+  animation: salto 1s alternate
+    infinite;
+}
+.contenedor-loader div:nth-child(2){ 
+  animation-delay: 0.20s; 
+}
+.contenedor-loader div:nth-child(3){ 
+  animation-delay: 0.40s; 
+}
+.contenedor-loader div:nth-child(4){ 
+  animation-delay: 0.60s; 
+}
+@keyframes salto {
+    from {
+        opacity: 1;
+    }
+    to{
+         opacity: 0;
+    }
+}

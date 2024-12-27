@@ -1,0 +1,25 @@
+
+.font-link {
+  font-family: "Gill Sans", sans-serif;;
+}
+
+.Total {
+    width: 100%;
+    text-align: right;
+}
+
+.Navbar {
+  background-color: #3b5998;
+  color: white;
+}
+
+.Navbar h3 {
+  width: 100%;
+  text-align: center;
+}
+
+.header-title{
+  background-color: #3b5998 !important;
+  font-weight: bold;
+  color: white !important;
+}
